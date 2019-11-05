@@ -1,0 +1,20 @@
+Computational Analysis of Protein Corona Formation in Biological Protein-Nanoparticle Interaction
+
+Nanoparticles (NPs) are being increasingly considered in the biomedical applications
+such as bioimaging, biosensing, nanomedicine, nanotoxicology, drug delivery and 
+hyperthermic therapies. When NPs enter a biological milieu, biomolecules particularly
+proteins (in form of lipoproteins) start to adsorb on to the surface of NPs. 
+The formation of protein layers on the surface of NPs is referred to as - protein corona. 
+In fact, cells often interact with the NPs with the modified surface and therefore 
+the subsequent cellular/tissue responses depend on the composition of the protein corona. 
+For instance, protein corona formation accelerates the pulmonary clearance of NPs in the body. 
+In essence, cellular responses to NPs with corona are significantly different than that of the NP itself.
+In this study SSA, Dxrd , ρ, D h , PdI, Zeta and hydrophobicity are analyzed to show 
+how they affect the protein corona composition which is highly beneficial to predict and study 
+the protein corona composition and dynamics.  
+
+In this study we analyze the effect of aforementioned nanoparticle features using 
+polynomial, Ridge, LASSO and Elastic Net regressions. Since, Ridge and LASSO are better at variable selection 
+and due to regularization they perform better for the predictive performance. In addition, they are able to use 
+correlated variables appropriately.
+
