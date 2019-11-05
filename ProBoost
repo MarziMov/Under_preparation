@@ -1,6 +1,11 @@
 **ProBoost: A Pipeline for Protein Quality Assessment using Structure-Sequence Profiles and XGBoost**
 
-Proteins perform vast array of functionalities in biological milieu. In other words, most biological processes are mediated through protein interactions. Since protein structures define their roles and functions, high-resolution structure of proteins is essential in realizing those functions. On the other hand, the complex and intricate nature of protein structure made it difficult to resolve a high-resolution model either experimentally i.e. NMR spectroscopy and X-ray crystallography, or computationally i.e. in protein structure prediction tools. Accordingly, model quality assessment (MAQ) has become an active research field in structural bioinformatics. 
+Proteins perform vast array of functionalities in biological milieu. In other words, most biological processes are mediated 
+through protein interactions. Since protein structures define their roles and functions, high-resolution structure of proteins 
+is essential in realizing those functions. On the other hand, the complex and intricate nature of protein structure made it 
+difficult to resolve a high-resolution model either experimentally i.e. NMR spectroscopy and X-ray crystallography, 
+or computationally i.e. in protein structure prediction tools. 
+Accordingly, model quality assessment (MAQ) has become an active research field in structural bioinformatics. 
 
 This project comprises two main phases: A) PreProcess, B) Assessment Pipeline.
 
@@ -11,10 +16,15 @@ in this phase a non-redundant sub-set of CATH is used. Preprocess comprises four
 proteins with structural similarity more than 0.5 are grouped into one protein family. 
 
 2) Building Sequence-Structure Profiles
-six features including solvent accessibility, secondary structure, structural segment, backbone free energy, amino acid bunching, amino acid frequency are used to build six profiles for each protein family. Two of features are related to protein sequence and 4 others are structural features.
+six features including solvent accessibility, secondary structure, structural segment, backbone free energy, 
+amino acid bunching, amino acid frequency are used to build six profiles for each protein family. 
+Two of features are related to protein sequence and 4 others are structural features.
 
 3) Building Test and Train datasets
-In this step each protein is scored based on its corresponding protein family using Sequence-Structure profiles. In fact, a dataset is constructed which each record consist of a target and candid protein (with same length) , 3 structure and two sequence features of the target protein, the TM-Score between target and candid protein and structural segment score between target and candid protein.
+In this step each protein is scored based on its corresponding protein family using Sequence-Structure profiles. 
+In fact, a dataset is constructed which each record consist of a target and candid protein (with same length) , 
+3 structure and two sequence features of the target protein, the TM-Score between target and candid protein and 
+structural segment score between target and candid protein.
 
 4) Learning (Classification)
 In the first step, in order to have an equal distribution for all TM-Score in 0.05 ranges, data were over-sampled.
